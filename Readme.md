@@ -12,18 +12,22 @@ Platform | Description
 -- | --
 `climate` | Heating / Cooling control.
 
+Note: Ensure that you have created an account using the Seeley Magiqtouch app and registered it with your system.
 
-{% if not installed %}
 ## Installation
 
-1. Click install.
-1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Blueprint".
-
-{% endif %}
-
+1. Open HACS
+1. Open Custom repositories (Menu at top right)
+1. In the Custom repositories dialogue go to the Repository field and enter "https://github.com/andrewleech/ha_magiqtouch" and under category choose Integration" click "ADD"
+1. Click "+ Explore and download repositories" and search for "magiqtouch", click to open then click download. It will download to custom_components/magiqtouch
+1. Once it is downloaded you will need to reboot.
 
 ## Configuration is done in the UI
+1. Go to settings, Devices & Services
+1. "+ Add Integration" and search for "Seeley MagIQtouch" and select the matching integation.
+1. Enter the Email / User account details for the Seeley Magiqtouch, and click submit. 
 
+This will add your MagIQtouch system as a entity - climate.(system/zone name)
 <!---->
 
 ***
